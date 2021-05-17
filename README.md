@@ -1,5 +1,11 @@
 # memory-game
 
+Simple game, just remember the framework and match it. After all cards have been matched, hit refresh page to start over. 
+
+(This app was built to practice a multitude of HTML, CSS, & JavaScript skills)
+
+
+
 To flip the card when clicked, a class 'flip' is added to the element. For that, I selected all memory-card elements with document.querySelectorAll. Then I loop through them with forEach and attach an event listener. Every time a card gets clicked 'flipCard' function is fired. The 'this' variable represents the card that was clicked. The function accesses the element's classList and toggles the 'flip' class. 
 
 To produce the 3D flip effect, I added the perspective property to .memory-game. That property sets how far in the z plane the object is from the user. The lower the value the bigger the perspective effect. For a subtle effect, let’s apply 1000px
